@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+  <h2>Todo List</h2>
+  <button onclick ="handlers.displayTodos()">DisplayTodos</button>
+  <button onclick ="handlers.toggleAll()">ToggleAll</button>
+  <div>
+   <input id="addTodoTextInput" type="text"> 
+   <button onclick="handlers.addTodos()">Add</button>
+  </div>
+  <br><br>
+  <div>
+    <input id="toggleCompletedInput" type="number">
+    <button onclick="handlers.toggleCompleted()">Toggle Completed</button>
+  </div>
+  <div>
+    <input id="todoText" type="text">
+    <input id="position" type="number">
+    <button onclick="handlers.changeTodos()">Change Todos</button>
+  </div>
+  <div>
+   <input id="deleteTodoInput" type="number">
+   <button onclick="handlers.deleteTodos()">Delete</button>
+  </div>
+
+  <ul>
+  </ul>
+  <script type="text/javascript" src="todopack.js"> </script>
+  </body>
+</html>
